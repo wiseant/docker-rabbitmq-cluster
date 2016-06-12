@@ -1,12 +1,12 @@
 rabbit1:
-  image: bijukunjummen/rabbitmq-server
+  image: jaysonxu/rabbitmq-server
   hostname: rabbit1
   ports:
     - "5672:5672"
     - "15672:15672"
 
 rabbit2:
-  image: bijukunjummen/rabbitmq-server
+  image: jaysonxu/rabbitmq-server
   hostname: rabbit2
   links:
     - rabbit1
@@ -19,7 +19,7 @@ rabbit2:
       - "15673:15672"
 
 rabbit3:
-  image: bijukunjummen/rabbitmq-server
+  image: jaysonxu/rabbitmq-server
   hostname: rabbit3
   links:
     - rabbit1

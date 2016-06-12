@@ -1,5 +1,5 @@
-FROM bijukunjummen/rabbitmq-base
-MAINTAINER Biju Kunjummen biju.kunjummen@gmail.com
+FROM jaysonxu/rabbitmq-base
+MAINTAINER jayson jayson7710@gmail.com
 
 ADD rabbitmq.config /etc/rabbitmq/
 
